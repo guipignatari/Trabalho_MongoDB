@@ -83,6 +83,13 @@ Apesar de os testes de desempenho terem mostrado resultados satisfatórios, algu
 - Escalabilidade: Implementar escalabilidade automática para processar grandes volumes de dados;
 Essa abordagem, que combina uma infraestrutura robusta com técnicas de otimização constante, garante que o sistema de gerenciamento de estoque possa evoluir para atender às crescentes demandas da cadeia de supermercados, proporcionando um serviço eficiente e confiável.
 
+# Disclaimer
+Utilizamos o framework Docketeer para auxiliar na observabilidade dos contêineres Docker. 
+
+O Docketeer oferece uma interface gráfica intuitiva que facilita a visualização e o controle de contêineres, imagens e volumes Docker. Estamos utilizando o Docketeer especificamente para capturar e monitorar informações relacionadas ao desempenho, disponibilidade e outras métricas importantes dos contêineres em teste. Esta ferramenta permite uma melhor análise e gestão desses processos, garantindo uma operação mais eficiente e confiável.
+
+Para mais informações sobre o Docketeer, acesse o [repositório oficial](https://github.com/open-source-labs/Docketeer-Extension) ou a [documentação](https://docketeer.io/).
+
 # Referências
 https://gustavo-leitao.medium.com/criando-um-cluster-mongodb-com-replicaset-e-sharding-com-docker-9cb19d456b56
 
