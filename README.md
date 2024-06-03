@@ -14,11 +14,30 @@
 
 ## Organização do Banco de Dados
 Baseado na avaliação, o MongoDB foi dividido em três shards. A opção por sharding teve como objetivo assegurar que o sistema pudesse se expandir horizontalmente, atendendo a um aumento na demanda sem prejudicar o desempenho. Cada shard foi configurado para armazenar um subconjunto dos dados, distribuídos de acordo com a chave de sharding definida para melhorar a distribuição e a eficiência das operações de leitura e escrita.
+Para criar e administrar os shards, foi criado um script em Python. O programa automatizou o processo de configuração, incluindo a criação dos shards, a definição das réplicas e a configuração da chave de sharding. 
 
 [Prepara Ambiente](https://github.com/isamoresco25/Trabalho_MongoDB/blob/main/PreparaAmbiente.ipynb)
 
-## Desenvolvimento do Script para o Python
-Para criar e administrar os shards, foi criado um script em Python. O programa automatizou o processo de configuração, incluindo a criação dos shards, a definição das réplicas e a configuração da chave de sharding. O Python foi escolhido devido à sua simplicidade e poderosas bibliotecas de automação, o que facilita a interação com o MongoDB através da biblioteca PyMongo.
+## Desenvolvimento do Script para inserção de dados
+Para popular os dados no MongoDB, foi desenvolvido um script utilizando bibliotecas como random para a criação de dados aleatórios. Esse script gera um conjunto de dados combinando nomes de produtos com descrições de produtos, bem como nomes de filiais com suas respectivas localizações. Dessa forma, ele cria um "cross join" aleatório entre essas listas para a inserção dos dados no banco.
+
+A biblioteca random foi fundamental para essa tarefa, pois permite a geração de dados aleatórios, garantindo diversidade e imprevisibilidade nos registros criados. A função random.choice foi usada para selecionar aleatoriamente elementos das listas de nomes de produtos, descrições, nomes de filiais e localizações. Além disso, a função random.randint pode ter sido utilizada para gerar valores numéricos aleatórios, como IDs de produtos ou filiais.
+
+O script segue o seguinte fluxo:
+- Criação de listas de dados base:
+
+    Lista de nomes de produtos.
+    Lista de descrições de produtos.
+    Lista de nomes de filiais.
+    Lista de localizações de filiais.
+    Geração de combinações aleatórias:
+- Utilizando a função random.choice, o script seleciona aleatoriamente um nome de produto e uma descrição para formar um registro de produto.
+    De forma similar, seleciona aleatoriamente um nome de filial e uma localização para formar um registro de filial.
+- Inserção no MongoDB:
+    Os registros gerados aleatoriamente são então inseridos no MongoDB, utilizando a biblioteca pymongo para a comunicação com o banco de dados.
+  
+Com esse método, é possível gerar um volume significativo de dados variáveis para fins de teste ou preenchimento inicial de um banco de dados, facilitando o desenvolvimento e a validação de funcionalidades dependentes desses dados.
+O Python foi escolhido devido à sua simplicidade e poderosas bibliotecas de automação, o que facilita a interação com o MongoDB.
 
 [Inserção de dados iniciais](https://github.com/isamoresco25/Trabalho_MongoDB/blob/main/carregar_produtos.py)
 
