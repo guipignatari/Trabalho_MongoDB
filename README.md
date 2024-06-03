@@ -28,9 +28,9 @@ O script segue o seguinte fluxo:
 
     Lista de nomes de produtos, lista de descrições de produtos, lista de nomes de filiais, lista de localizações de filiais.
   
-    Geração de combinações aleatórias:
-- Utilizando a função random.choice, o script seleciona aleatoriamente um nome de produto e uma descrição para formar um registro de produto.
-    De forma similar, seleciona aleatoriamente um nome de filial e uma localização para formar um registro de filial.
+- Geração de combinações aleatórias:
+      Utilizando a função random.choice, o script seleciona aleatoriamente um nome de produto e uma descrição para formar um registro de produto. De forma similar, seleciona aleatoriamente um nome de filial e uma localização para formar um registro de filial.
+  
 - Inserção no MongoDB:
     Os registros gerados aleatoriamente são então inseridos no MongoDB, utilizando a biblioteca pymongo para a comunicação com o banco de dados.
   
