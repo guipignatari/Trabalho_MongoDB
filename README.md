@@ -21,7 +21,7 @@ Para criar e administrar os shards, foi criado um script em Python. O programa a
 ## Desenvolvimento do Script para inserção de dados
 Para popular os dados no MongoDB, foi desenvolvido um script utilizando bibliotecas como random para a criação de dados aleatórios. Esse script gera um conjunto de dados combinando nomes de produtos com descrições de produtos, bem como nomes de filiais com suas respectivas localizações. Dessa forma, ele cria um "cross join" aleatório entre essas listas para a inserção dos dados no banco.
 
-A biblioteca random foi fundamental para essa tarefa, pois permite a geração de dados aleatórios, garantindo diversidade e imprevisibilidade nos registros criados. A função random.choice foi usada para selecionar aleatoriamente elementos das listas de nomes de produtos, descrições, nomes de filiais e localizações. Além disso, a função random.randint pode ter sido utilizada para gerar valores numéricos aleatórios, como IDs de produtos ou filiais.
+A biblioteca `random` foi fundamental para essa tarefa, pois permite a geração de dados aleatórios, garantindo diversidade e imprevisibilidade nos registros criados. A função random.choice foi usada para selecionar aleatoriamente elementos das listas de nomes de produtos, descrições, nomes de filiais e localizações. Além disso, a função `random.randint` foi utilizada para gerar valores numéricos aleatórios, como IDs de produtos e filiais.
 
 O script segue o seguinte fluxo:
 - Criação de listas de dados base:
@@ -29,7 +29,7 @@ O script segue o seguinte fluxo:
     Lista de nomes de produtos, lista de descrições de produtos, lista de nomes de filiais, lista de localizações de filiais.
   
 - Geração de combinações aleatórias:
-      Utilizando a função random.choice, o script seleciona aleatoriamente um nome de produto e uma descrição para formar um registro de produto. De forma similar, seleciona aleatoriamente um nome de filial e uma localização para formar um registro de filial.
+      Utilizando a função `random.choice`, o script seleciona aleatoriamente um nome de produto e uma descrição para formar um registro de produto. De forma similar, seleciona aleatoriamente um nome de filial e uma localização para formar um registro de filial.
   
 - Inserção no MongoDB:
     Os registros gerados aleatoriamente são então inseridos no MongoDB, utilizando a biblioteca pymongo para a comunicação com o banco de dados.
