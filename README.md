@@ -26,10 +26,8 @@ A biblioteca random foi fundamental para essa tarefa, pois permite a geração d
 O script segue o seguinte fluxo:
 - Criação de listas de dados base:
 
-    Lista de nomes de produtos.
-    Lista de descrições de produtos.
-    Lista de nomes de filiais.
-    Lista de localizações de filiais.
+    Lista de nomes de produtos, lista de descrições de produtos, lista de nomes de filiais, lista de localizações de filiais.
+  
     Geração de combinações aleatórias:
 - Utilizando a função random.choice, o script seleciona aleatoriamente um nome de produto e uma descrição para formar um registro de produto.
     De forma similar, seleciona aleatoriamente um nome de filial e uma localização para formar um registro de filial.
