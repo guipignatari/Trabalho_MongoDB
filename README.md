@@ -73,7 +73,7 @@ Atualização com milhões de linhas
 
 ## Os resultados dos testes de desempenho foram apresentados
 Após a implantação, o sistema foi submetido a uma série de testes de desempenho para testar sua eficiência em condições operacionais ideais. Os resultados mais relevantes incluem:
-Tempo de Resposta: As operações de leitura e escrita tiveram um `tempo médio de 0.098ms no máximo`, mesmo sob uma grande quantidade de consultas simultâneas.
+Tempo de Resposta: As operações de leitura e escrita tiveram um `tempo médio de 0.09ms (máximo)`, mesmo sob uma grande quantidade de consultas simultâneas.
 A configuração com réplicas garantiu uma alta disponibilidade do sistema, com um tempo de inatividade próximo a zero nos testes de failover.
 
 # Sugestões para Melhorias
