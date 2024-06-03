@@ -28,7 +28,7 @@ Para criar e administrar os shards, foi criado um script em Python. O programa a
 Inclusão de 10.000 registros com script em Python
 ![image](https://github.com/isamoresco25/Trabalho_MongoDB/assets/33660095/fe947aa9-605d-40cb-81bb-769fdd326c01)
 
-Inserção de milhões de linhas
+Inserção de milhões de linhas com o mesmo script em Python
 ![image](https://github.com/isamoresco25/Trabalho_MongoDB/assets/33660095/ceb7073c-f101-4bda-8b2a-82958a0f2f8e)
 
 ### Leitura dos dados
@@ -52,9 +52,9 @@ A configuração com réplicas garantiu uma alta disponibilidade do sistema, com
 
 # Sugestões para Melhorias
 Apesar de os testes de desempenho terem mostrado resultados satisfatórios, algumas áreas para melhorar foram identificadas:
-Otimização de Consultas: Revisar e otimizar as consultas MongoDB para diminuir ainda mais o tempo de resposta, sobretudo em operações complexas de agregação.
-Adotar um sistema de monitoramento mais eficiente para identificar e responder prontamente a problemas de desempenho ou falhas.
-Escalabilidade: Implementar escalabilidade automática para processar grandes volumes de dados.
+- Otimização de Consultas: Revisar e otimizar as consultas MongoDB para diminuir ainda mais o tempo de resposta, sobretudo em operações complexas de agregação;
+- Adotar um sistema de monitoramento mais eficiente para identificar e responder prontamente a problemas de desempenho ou falhas;
+- Escalabilidade: Implementar escalabilidade automática para processar grandes volumes de dados;
 Essa abordagem, que combina uma infraestrutura robusta com técnicas de otimização constante, garante que o sistema de gerenciamento de estoque possa evoluir para atender às crescentes demandas da cadeia de supermercados, proporcionando um serviço eficiente e confiável.
 
 # Referências
