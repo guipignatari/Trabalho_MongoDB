@@ -26,13 +26,16 @@ A biblioteca `random` foi fundamental para essa tarefa, pois permite a geração
 **O script segue o seguinte fluxo:**
 
 _- Criação de listas de dados base:_
-    Lista de nomes de produtos, lista de descrições de produtos, lista de nomes de filiais, lista de localizações de filiais.
+
+Lista de nomes de produtos, lista de descrições de produtos, lista de nomes de filiais, lista de localizações de filiais.
   
 _- Geração de combinações aleatórias:_
-      Utilizando a função `random.choice`, o script seleciona aleatoriamente um nome de produto e uma descrição para formar um registro de produto. De forma similar, seleciona aleatoriamente um nome de filial e uma localização para formar um registro de filial.
+
+Utilizando a função `random.choice`, o script seleciona aleatoriamente um nome de produto e uma descrição para formar um registro de produto. De forma similar, seleciona aleatoriamente um nome de filial e uma localização para formar um registro de filial.
   
 _- Inserção no MongoDB:_
-    Os registros gerados aleatoriamente são então inseridos no MongoDB, utilizando a biblioteca `pymongo` para a comunicação com o banco de dados.
+
+Os registros gerados aleatoriamente são então inseridos no MongoDB, utilizando a biblioteca `pymongo` para a comunicação com o banco de dados.
   
 Com esse método, é possível gerar um volume significativo de dados variáveis para fins de teste ou preenchimento inicial de um banco de dados, facilitando o desenvolvimento e a validação de funcionalidades dependentes desses dados.
 O Python foi escolhido devido à sua simplicidade e poderosas bibliotecas de automação, o que facilita a interação com o MongoDB e inserção dos dados.
