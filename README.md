@@ -34,9 +34,11 @@ Inserção de milhões de linhas com o mesmo script em Python
 Inserção 02 de milhões de linhas com o mesmo script em Python
 ![image](https://github.com/isamoresco25/Trabalho_MongoDB/assets/33660095/0e173a57-eb83-4d10-90b2-9c07fcd6e175)
 
-
 ### Leitura dos dados
 ![image](https://github.com/isamoresco25/Trabalho_MongoDB/assets/33660095/946a7e2a-7c9f-4f0b-ae97-e9ac826987f0)
+
+Tempo de execução de 0.06 ms para consulta de 638.954 documentos
+![image](https://github.com/isamoresco25/Trabalho_MongoDB/assets/33660095/31c45973-2dc4-499b-ba2b-902916870652)
 
 ### Atualiações de dados
 Atualização de produtos com preço de 16.31 para 32.57 (5 linhas afetadas)
@@ -46,12 +48,12 @@ Atualização com milhões de linhas
 ![image](https://github.com/isamoresco25/Trabalho_MongoDB/assets/33660095/71631f0b-7c45-4790-97d2-8c5d4d8ba8d4)
 
 ### Exclusão de dados
-![Badge em Processamento](http://img.shields.io/static/v1?label=STATUS&message=EM%20PROCESSAMENTO&color=GREEN&style=for-the-badge)    
+![image](https://github.com/isamoresco25/Trabalho_MongoDB/assets/33660095/5280e451-e248-4a1b-abe1-4b30fb8a7e33)
 
 
 ## Os resultados dos testes de desempenho foram apresentados
 Após a implantação, o sistema foi submetido a uma série de testes de desempenho para testar sua eficiência em condições operacionais ideais. Os resultados mais relevantes incluem:
-Tempo de Resposta: As operações de leitura e escrita tiveram um tempo médio de `__Alterar valor conforme relaidade do banco: 50ms__`, mesmo sob uma grande quantidade de consultas simultâneas.
+Tempo de Resposta: As operações de leitura e escrita tiveram um `tempo médio de 0.098ms no máximo`, mesmo sob uma grande quantidade de consultas simultâneas.
 A configuração com réplicas garantiu uma alta disponibilidade do sistema, com um tempo de inatividade próximo a zero nos testes de failover.
 
 # Sugestões para Melhorias
