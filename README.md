@@ -31,6 +31,10 @@ Inclusão de 10.000 registros com script em Python
 Inserção de milhões de linhas com o mesmo script em Python
 ![image](https://github.com/isamoresco25/Trabalho_MongoDB/assets/33660095/ceb7073c-f101-4bda-8b2a-82958a0f2f8e)
 
+Inserção 02 de milhões de linhas com o mesmo script em Python
+![image](https://github.com/isamoresco25/Trabalho_MongoDB/assets/33660095/0e173a57-eb83-4d10-90b2-9c07fcd6e175)
+
+
 ### Leitura dos dados
 ![image](https://github.com/isamoresco25/Trabalho_MongoDB/assets/33660095/946a7e2a-7c9f-4f0b-ae97-e9ac826987f0)
 
