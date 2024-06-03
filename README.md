@@ -5,7 +5,7 @@
     Bianca Fernanda Leite 
     Guilherme Vinicius Pignatari
 
-![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)    
+![Badge finalizado](http://img.shields.io/static/v1?label=STATUS&message=%20FINALIZADO&color=GREEN&style=for-the-badge)    
 
 # Apresentação Introdução
   A criação de um sistema de gestão de estoque eficaz é crucial para o sucesso da operação de uma cadeia de supermercados. Este projeto foi criado para atender a essa necessidade, usando uma abordagem que alia a robustez do MongoDB à flexibilidade da linguagem Python. O MongoDB foi escolhido devido sua utilização em sala de aula e sua capacidade de lidar com grandes volumes de dados, proporcionar alta disponibilidade e escalabilidade, características fundamentais para um sistema de gerenciamento de estoque. O banco de dados foi configurado com três shards, distribuídos de forma a equilibrar a carga e otimizar o tempo de resposta.
