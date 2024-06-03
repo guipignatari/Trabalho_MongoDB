@@ -24,8 +24,8 @@ Para popular os dados no MongoDB, foi desenvolvido um script utilizando bibliote
 A biblioteca `random` foi fundamental para essa tarefa, pois permite a geração de dados aleatórios, garantindo diversidade e imprevisibilidade nos registros criados. A função random.choice foi usada para selecionar aleatoriamente elementos das listas de nomes de produtos, descrições, nomes de filiais e localizações. Além disso, a função `random.randint` foi utilizada para gerar valores numéricos aleatórios, como IDs de produtos e filiais.
 
 **O script segue o seguinte fluxo:**
-_- Criação de listas de dados base:_
 
+_- Criação de listas de dados base:_
     Lista de nomes de produtos, lista de descrições de produtos, lista de nomes de filiais, lista de localizações de filiais.
   
 _- Geração de combinações aleatórias:_
