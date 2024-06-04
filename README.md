@@ -16,7 +16,7 @@
 Baseado na avaliação, o MongoDB foi dividido em três shards. A opção por sharding teve como objetivo assegurar que o sistema pudesse se expandir horizontalmente, atendendo a um aumento na demanda sem prejudicar o desempenho. Cada shard foi configurado para armazenar um subconjunto dos dados, distribuídos de acordo com a chave de sharding definida para melhorar a distribuição e a eficiência das operações de leitura e escrita.
 Para criar e administrar os shards, foi criado um script em Python. O programa automatizou o processo de configuração, incluindo a criação dos shards, a definição das réplicas e a configuração da chave de sharding. 
 
-[Prepara Ambiente](https://github.com/isamoresco25/Trabalho_MongoDB/blob/main/PreparaAmbiente.ipynb)
+- [Script de Configuração do Ambiente](https://github.com/isamoresco25/Trabalho_MongoDB/blob/main/PreparaAmbiente.ipynb)
 
 ## Desenvolvimento do Script para inserção de dados
 Para popular os dados no MongoDB, foi desenvolvido um script utilizando bibliotecas como random para a criação de dados aleatórios. Esse script gera um conjunto de dados combinando nomes de produtos com descrições de produtos, bem como nomes de filiais com suas respectivas localizações. Dessa forma, ele cria um "cross join" aleatório entre essas listas para a inserção dos dados no banco.
@@ -40,7 +40,7 @@ Os registros gerados aleatoriamente são então inseridos no MongoDB, utilizando
 Com esse método, é possível gerar um volume significativo de dados variáveis para fins de teste ou preenchimento inicial de um banco de dados, facilitando o desenvolvimento e a validação de funcionalidades dependentes desses dados.
 O Python foi escolhido devido à sua simplicidade e poderosas bibliotecas de automação, o que facilita a interação com o MongoDB e inserção dos dados.
 
-[Inserção de dados iniciais](https://github.com/isamoresco25/Trabalho_MongoDB/blob/main/carregar_produtos.py)
+- [Script de População do Banco de Dados](https://github.com/isamoresco25/Trabalho_MongoDB/blob/main/carregar_produtos.py)
 
 ## Testes
 
@@ -70,7 +70,6 @@ Atualização com milhões de linhas
 ### Exclusão de dados
 ![image](https://github.com/isamoresco25/Trabalho_MongoDB/assets/33660095/5280e451-e248-4a1b-abe1-4b30fb8a7e33)
 
-
 ## Os resultados dos testes de desempenho foram apresentados
 Após a implantação, o sistema foi submetido a uma série de testes de desempenho para testar sua eficiência em condições operacionais ideais. Os resultados mais relevantes incluem:
 Tempo de Resposta: As operações de leitura e escrita tiveram um `tempo médio de 0.09ms (máximo)`, mesmo sob uma grande quantidade de consultas simultâneas.
@@ -83,7 +82,7 @@ Apesar de os testes de desempenho terem mostrado resultados satisfatórios, algu
 - Escalabilidade: Implementar escalabilidade automática para processar grandes volumes de dados;
 Essa abordagem, que combina uma infraestrutura robusta com técnicas de otimização constante, garante que o sistema de gerenciamento de estoque possa evoluir para atender às crescentes demandas da cadeia de supermercados, proporcionando um serviço eficiente e confiável.
 
-# Disclaimer
+## Disclaimer
 Utilizamos o framework Docketeer para auxiliar na observabilidade dos contêineres Docker. 
 
 O Docketeer oferece uma interface gráfica intuitiva que facilita a visualização e o controle de contêineres, imagens e volumes Docker. Estamos utilizando o Docketeer especificamente para capturar e monitorar informações relacionadas ao desempenho, disponibilidade e outras métricas importantes dos contêineres em teste. Esta ferramenta permite uma melhor análise e gestão desses processos, garantindo uma operação mais eficiente e confiável.
