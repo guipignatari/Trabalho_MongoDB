@@ -75,19 +75,19 @@ Após a implantação, o sistema foi submetido a uma série de testes de desempe
 Tempo de Resposta: As operações de leitura e escrita tiveram um `tempo médio de 0.09ms (máximo)`, mesmo sob uma grande quantidade de consultas simultâneas.
 A configuração com réplicas garantiu uma alta disponibilidade do sistema, com um tempo de inatividade próximo a zero nos testes de failover.
 
-# Sugestões para Melhorias
-Apesar de os testes de desempenho terem mostrado resultados satisfatórios, algumas áreas para melhorar foram identificadas:
-- Otimização de Consultas: Revisar e otimizar as consultas MongoDB para diminuir ainda mais o tempo de resposta, sobretudo em operações complexas de agregação;
-- Adotar um sistema de monitoramento mais eficiente para identificar e responder prontamente a problemas de desempenho ou falhas;
-- Escalabilidade: Implementar escalabilidade automática para processar grandes volumes de dados;
-Essa abordagem, que combina uma infraestrutura robusta com técnicas de otimização constante, garante que o sistema de gerenciamento de estoque possa evoluir para atender às crescentes demandas da cadeia de supermercados, proporcionando um serviço eficiente e confiável.
-
 ## Disclaimer
 Utilizamos o framework Docketeer para auxiliar na observabilidade dos contêineres Docker. 
 
 O Docketeer oferece uma interface gráfica intuitiva que facilita a visualização e o controle de contêineres, imagens e volumes Docker. Estamos utilizando o Docketeer especificamente para capturar e monitorar informações relacionadas ao desempenho, disponibilidade e outras métricas importantes dos contêineres em teste. Esta ferramenta permite uma melhor análise e gestão desses processos, garantindo uma operação mais eficiente e confiável.
 
 Para mais informações sobre o Docketeer, acesse o [repositório oficial](https://github.com/open-source-labs/Docketeer-Extension) ou a [documentação](https://docketeer.io/).
+
+# Sugestões para Melhorias
+Apesar de os testes de desempenho terem mostrado resultados satisfatórios, algumas áreas para melhorar foram identificadas:
+- Otimização de Consultas: Revisar e otimizar as consultas MongoDB para diminuir ainda mais o tempo de resposta, sobretudo em operações complexas de agregação;
+- Adotar um sistema de monitoramento mais eficiente para identificar e responder prontamente a problemas de desempenho ou falhas;
+- Escalabilidade: Implementar escalabilidade automática para processar grandes volumes de dados;
+Essa abordagem, que combina uma infraestrutura robusta com técnicas de otimização constante, garante que o sistema de gerenciamento de estoque possa evoluir para atender às crescentes demandas da cadeia de supermercados, proporcionando um serviço eficiente e confiável.
 
 # Referências
 https://gustavo-leitao.medium.com/criando-um-cluster-mongodb-com-replicaset-e-sharding-com-docker-9cb19d456b56
